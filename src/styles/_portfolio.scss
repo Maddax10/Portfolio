@@ -1,4 +1,5 @@
 $black: black;
+$white: white;
 $darkGray: #080808;
 $lightGray: #212121;
 $sunrise: #ffa700;
@@ -9,44 +10,76 @@ body {
   background-color: $lightGray;
   width: 100%;
   height: 100dvh;
+  user-select: none;
 }
 .mainHeader {
   display: flex;
   justify-content: center;
   &__nav {
-    background: transparentize($darkGray, .5);
+    background: transparentize($darkGray, 0.5);
     width: fit-content;
     padding: 2rem;
     margin-block-start: 1rem;
     border-radius: 12px;
-    position:fixed;
+    position: fixed;
     ul {
       display: flex;
       justify-content: center;
       gap: 10px;
       li a {
-        transition: ease .3s;
+        transition: ease 0.3s;
         text-decoration: none;
         color: $sunrise;
         background-color: $lightGray;
-        padding-block:12px;
+        padding-block: 12px;
         padding-inline: 1rem;
         border-radius: 6px;
-        cursor:pointer;
+        cursor: pointer;
         border: 2px solid $darkGray;
-        &:hover{
-          color:$darkGray;
+        &:hover {
+          color: $darkGray;
           background-color: $sunrise;
           border: 2px solid $sunrise;
         }
-        &:active{
+        &:active {
           background-color: $darkSunrise;
           border: 2px solid $darkGray;
-
         }
       }
       .activePage {
       }
     }
+  }
+}
+
+.mainContent {
+  width: 100%;
+  height: 100%;
+  
+  &__header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 500px;
+    color: $white;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+
+  &__firstLine {
+    align-self: end;
+  }
+  &__handLine {
+    font-size: 3rem;
+    opacity: 40%;
+    font-weight: 200;
+    align-self: start;
+    justify-self: end;
+  }
+  &__frontWord {
+    color: $sunrise;
   }
 }
