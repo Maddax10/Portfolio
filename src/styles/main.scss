@@ -1,4 +1,4 @@
-@use "normalize";
-@use "variable";
-@use "fonts";
-// @use "maintenance";
+@use "./_normalize.scss";
+@use "./_variable.scss";
+@use "./_fonts.scss";
+@use "./_portfolio.scss";
