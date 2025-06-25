@@ -55,4 +55,9 @@
       width: 100%;
     }
   }
+
+  &__underConstruction{
+    padding:1rem;
+    color:var(--sunrise);
+  }
 }
