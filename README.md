@@ -1,6 +1,7 @@
 # Portfolio
 
-I use BEM for HTML/sass
+I use BEM for HTML/sass.
+For now the site is only for mobile
 
 ## Framework
 
@@ -31,4 +32,4 @@ npm run preview
 ```
 All the prod files should be in the './dist/' folder. Put the "./dist/" folder inside the html folder of your apache2, or other web server
 
-###### © 2025 Michon Maximilien. Tous droits réservés.
+###### &copy; 2025 Michon Maximilien. Tous droits réservés.
