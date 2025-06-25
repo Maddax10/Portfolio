@@ -13,13 +13,13 @@ I use BEM for HTML/sass
 
 ## How to run
 
-Open te portfolio folder into Visual Studio Code and run in the terminal
+Open the portfolio folder into Visual Studio Code and execute in the terminal
 ```bash
 npm run build
 npm run dev
 ```
 
-It should open a port on localhost
+It should open a port on localhost, see the terminal
 
 ## How to prod
 
@@ -29,6 +29,6 @@ nom run build
 (optionnal)
 npm run preview
 ```
-All the prod files should be in the './dist/' folder.
+All the prod files should be in the './dist/' folder. Put the "./dist/" folder inside the html folder of your apache2, or other web server
 
 ###### © 2025 Michon Maximilien. Tous droits réservés.
