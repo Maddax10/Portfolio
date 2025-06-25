@@ -1,0 +1,40 @@
+.mainHeader {
+  display: flex;
+  justify-content: center;
+  &__nav {
+    background: var(--darkGray_50op);
+    width: fit-content;
+    padding: 2rem;
+    margin-block-start: 1rem;
+    border-radius: 12px;
+    position: fixed;
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      li a {
+        transition: ease 0.3s;
+        text-decoration: none;
+        color: var(--sunrise);
+        background-color: var(--lightGray);
+        padding-block: 12px;
+        padding-inline: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        border: 2px solid var(--darkGray);
+        &:hover {
+          color: var(--darkGray);
+          background-color: var(--sunrise);
+          border: 2px solid var(--sunrise);
+        }
+        &:active {
+          background-color: var(--darkSunrise);
+          border: 2px solid var(--darkGray);
+        }
+      }
+      .activePage {
+        background-color: red;
+      }
+    }
+  }
+}

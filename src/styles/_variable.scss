@@ -1,0 +1,16 @@
+$black: black;
+$white: white;
+$darkGray: #080808;
+$lightGray: #212121;
+$sunrise: #ffa700;
+$darkSunrise: #ca8300;
+
+:root{
+  --black : #{$black};
+  --white : #{$white};
+  --darkGray : #{$darkGray};
+  --darkGray_50op : transparentize(#{$darkGray}, .5);
+  --lightGray : #{$lightGray};
+  --sunrise : #{$sunrise};
+  --darkSunrise : #{$darkSunrise};
+}
