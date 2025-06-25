@@ -25,6 +25,7 @@ const pages = {
   },
 }
 
+
 //boucle tous les fichier html du projet pour les mettre dans /dist
 const htmlFiles = readdirSync(__dirname)
   .filter(file => file.endsWith('.html'))
@@ -38,11 +39,8 @@ export default {
   plugins: [
     handlebars({
       partialDirectory: resolve(__dirname, 'src/partials'),
-      context(pagePath) {
-        const pageName = pagePath.split('/').pop(); // récupère 'index.html'
-        return pages[pageName] || {};
-      }
-    }),
+
+    })
   ],
   resolve: {
     alias: {
