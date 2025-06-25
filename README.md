@@ -1,9 +1,9 @@
-# Portfolio
+# Portfolio front-end
 
 I use BEM for HTML/sass.
-For now the site is only for mobile
+For now the site is only for mobile 26/06/2025
 
-## Framework
+## Work environment
 
 - https://www.vite.dev
 
