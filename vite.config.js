@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import handlebars from 'vite-plugin-handlebars';
 import { readdirSync } from 'fs';
 
-const pages = {
+const page = {
   'index.html': {
     title: 'Accueil',
     // description: 'Maintenance en cours'

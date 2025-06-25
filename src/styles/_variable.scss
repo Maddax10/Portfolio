@@ -1,0 +1,29 @@
+@use "sass:color";
+
+$black: black;
+$white: white;
+$darkGray : color.adjust($black, $lightness : 5%);
+$lightGray: color.adjust($black, $lightness : 15%);
+$lighterGray: color.adjust($black, $lightness : 25%);
+$sunrise: #ffa700;
+$darkSunrise: #ca8300;
+$transitionTime : .3s;
+
+:root{
+  --black : #{$black};
+  --white : #{$white};
+  --darkGray : #{$darkGray};
+  --lightGray : #{$lightGray};
+  --lighterGray : #{$lighterGray};
+  --sunrise : #{$sunrise};
+  --darkSunrise : #{$darkSunrise};
+  --transitionTime : #{$transitionTime};
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--lightGray);
+  width: 100%;
+  height: 100dvh;
+  user-select: none;
+}

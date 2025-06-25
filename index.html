@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  {{> index/indexHead}}
-</head>
-<body>
-  {{> index/indexBody}}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <script defer type="module" src="./src/scripts/main.js"></script>
+    <link rel="stylesheet" href="src/styles/index.scss" />
+  </head>
+  <body>
+    <header class="mainHeader">{{> nav}}</header>
+    <main class="mainContent">
+      <section class="mainContent__intro">
+        <h1>THE WEB <span>QUALITY</span></h1>
+        <p>By hands</p>
+      </section>
+
+      <!-- ////////////////////////////////////////////////////////////////// -->
+      <!--                            Skills                                  -->
+      <!-- ////////////////////////////////////////////////////////////////// -->
+      <section class="mainContent__skills">
+        <h1 class="mainContent__title">SKILLS</h1>
+        <!----- cards ----->
+        <div class="mainContent__cards">
+          <!--HTML-->
+          <div class="mainContent__card">
+            <div class="mainContent__cardLogo">
+              <img src="/src/images/HTML5_logo.svg" alt="HTML logo" />
+            </div>
+            <article class="mainContent__cardText">
+              <h1>HTML</h1>
+              <p>Structure des données</p>
+            </article>
+          </div>
+          <!--Sass-->
+          <div class="mainContent__card">
+            <div class="mainContent__cardLogo">
+              <img src="/src/images/Sass_logo.svg" alt="Sass logo" />
+            </div>
+            <article class="mainContent__cardText">
+              <h1>Sass</h1>
+              <p>Style de la structure</p>
+            </article>
+          </div>
+          <!--JS-->
+          <div class="mainContent__card">
+            <div class="mainContent__cardLogo">
+              <img src="/src/images/JavaScript_logo.svg" alt="JS logo" />
+            </div>
+            <article class="mainContent__cardText">
+              <h1>JavaScript</h1>
+              <p>TypeScript en moins bien</p>
+            </article>
+          </div>
+          <!--Vite.dev-->
+          <div class="mainContent__card">
+            <div class="mainContent__cardLogo">
+              <img src="/src/images/vite_dev_logo.svg" alt="Vite.dev logo" />
+            </div>
+            <article class="mainContent__cardText">
+              <h1>Vite.dev</h1>
+              <p>Environnement de développement</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
