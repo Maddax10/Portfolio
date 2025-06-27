@@ -1,0 +1,79 @@
+.projects {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+
+  h1 {
+    color: var(--sunrise);
+    text-align: center;
+    margin-block: 1rem;
+  }
+  &__cards {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width:100%;
+  }
+}
+.card {
+  transition: ease 0.25s;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+
+  text-decoration: none;
+  background-color: var(--darkGray);
+  box-shadow: inset 0 0 3px 0 var(--white60op), 0 0 7px 1px var(--black);
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  &:hover {
+    transform: translateY(3px);
+    box-shadow: inset 0 0 2px 0 var(--white60op), 0 0 4px 0 var(--black);
+  }
+  &__divScreen {
+    box-shadow: inset 0 0 3px 0 var(--white60op), 0 0 5px 1px var(--black);
+    border-radius: 0.5rem;
+    margin-block-end: 1rem;
+  }
+  &__screen {
+    display: flex;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  &__description {
+    margin-block-start: 0.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--white60op);
+    width: 95%;
+    justify-self: center;
+    text-align: center;
+  }
+
+  &__link {
+    transition: ease 0.15s;
+
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    justify-self: end;
+    margin-inline-start: 1rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    &:hover {
+      background-color: var(--lighterGray);
+    }
+  }
+  &__linkLogo {
+    display: flex;
+    width: 2rem;
+  }
+}

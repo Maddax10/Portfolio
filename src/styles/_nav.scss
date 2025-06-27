@@ -1,35 +1,44 @@
-$navHeight: 100px;
+$navHeight: 75px;
 .nav {
   position: relative;
   display: grid;
   justify-items: center;
 
   &__logo {
+    transition: ease var(--transitionTime);
     position: fixed;
     z-index: 1000;
-    display: grid;
-    justify-items: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-size: 5rem;
-    font-weight: 900;
+    gap:.5rem;
+
     background-color: var(--sunrise);
     color: var(--lightGray);
-    padding-inline: 1rem;
+
     cursor: pointer;
     height: $navHeight;
     width: 100%;
+    border-radius:0 0 .25rem .25rem;
     &:hover {
-      background-color: var(--darkSunrise);
+      background-color: var(--black);
+      span{
+        background-color: var(--sunrise);
+      }
+    }
+    span{
+      width:50px;
+      height:7px;
+      background-color: var(--black);
+      border-radius: 2px;
     }
   }
 
   &__trigger {
-    opacity: 0;
+    display:none;
     position: fixed;
-
-    &::before {
-      content: "X";
-    }
     &:checked {
       ~ .nav__navMobile {
         transform: translateY(0);
@@ -42,11 +51,12 @@ $navHeight: 100px;
     z-index: 999;
     top: $navHeight;
     transform: translateY(-100%);
+    background-color: var(--black60op);
     backdrop-filter: blur(20px);
     display: grid;
     width: 100%;
     border-radius: 0 0 2rem 2rem;
-    box-shadow: inset 0 0 10px 5px var(--lightGray), 0 0 16px 1px var(--black);
+    box-shadow: inset 0 0px 10px 3px var(--lightGray), 0 0 16px 1px var(--black);
     a {
       display: flex;
       justify-content: center;
@@ -56,9 +66,12 @@ $navHeight: 100px;
       font-weight: 600;
       
     }
+    li:last-child a{
+      border-radius: 0 0 2rem 2rem;
+    }
 
     a:hover {
-      color: var(--darkSunrise);
+      backdrop-filter: blur(50px);
     }
   }
 }

@@ -2,21 +2,23 @@
 
 $black: black;
 $white: white;
+$white60op : color.scale($white, $alpha : -60%);
+$black60op : color.scale($black, $alpha : -60%);
 $darkGray : color.adjust($black, $lightness : 5%);
 $lightGray: color.adjust($black, $lightness : 15%);
 $lighterGray: color.adjust($black, $lightness : 25%);
-$sunrise: #ffa700;
-$darkSunrise: #ca8300;
+$sunrise: #FFA600;
 $transitionTime : .3s;
 
 :root{
   --black : #{$black};
   --white : #{$white};
+  --black60op : #{$black60op};
+  --white60op : #{$white60op};
   --darkGray : #{$darkGray};
   --lightGray : #{$lightGray};
   --lighterGray : #{$lighterGray};
   --sunrise : #{$sunrise};
-  --darkSunrise : #{$darkSunrise};
   --transitionTime : #{$transitionTime};
 }
 

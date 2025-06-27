@@ -1,27 +1,23 @@
-.mainContent {
-  display: grid;
-  justify-items: center;
-  width: 100%;
+.intro {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
 
-  &__intro {
-    height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    text-align: center;
-    justify-content: center;
+  width: 80%;
+  
+  h1 {
+    font-size: 2rem;
+    color: var(--white);
 
-    h1 {
-      font-size: 2rem;
-      color: var(--white);
-
-      span {
-        color: var(--sunrise);
-      }
+    span {
+      color: var(--sunrise);
     }
-    :nth-child(2) {
-      color: var(--white);
-      opacity: 50%;
-    }
+  }
+  :nth-child(2) {
+    color: var(--white);
+    opacity: 50%;
   }
 }
