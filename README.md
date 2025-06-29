@@ -30,6 +30,6 @@ nom run build
 (optionnal)
 npm run preview
 ```
-All the prod files should be in the './dist/' folder. Put the "./dist/" folder inside the html folder of your apache2, or other web server
+All the prod files should be in the './dist/' folder. Put the content of "./dist/" inside the html folder of your apache2, or other web server
 
 ###### &copy; 2025 Michon Maximilien. Tous droits réservés.
