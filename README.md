@@ -1,7 +1,7 @@
 # Portfolio front-end
 
 I use BEM for HTML/sass.
-For now the site is only for mobile 26/06/2025
+For now the site is only for mobile 29/06/2025
 
 ## Work environment
 
@@ -26,7 +26,7 @@ It should open a port on localhost, see the terminal
 ## How to prod
 
 ```bash
-nom run build
+npm run build
 
 (optionnal)
 npm run preview
