@@ -52,12 +52,14 @@
 
   &__description{
     color:var(--white60op);
+    text-align: justify;
+    justify-self: center;
     p{
       margin-block-end: 1rem;
     }
     
   }
-  &__italic{
+  &__litle{
     font-style: italic;
     font-size: .7rem;
   }
