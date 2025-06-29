@@ -1,0 +1,65 @@
+.about {
+  background: var(--black);
+  padding-block-start: 1rem;
+
+  &__card {
+    display: grid;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  //==================================================
+  //  Image
+  //==================================================
+  &__image {
+    transition: ease var(--transitionTime);
+
+    display: grid;
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 0 0 10px 5px var(--black), 0 0 0 10px var(--sunrise);
+    margin-block: 2rem;
+    border: 2px solid var(--black);
+    &:hover {
+      transform: translateY(3px);
+    }
+    img {
+      transition: ease var(--transitionTime);
+
+      justify-self: center;
+      width: 100%;
+      border-radius: 100%;
+    }
+  }
+  &__imageOverlay {
+    transition: ease var(--transitionTime);
+
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    &:hover {
+      backdrop-filter: blur(10px);
+    }
+  }
+  //==================================================
+  //  Title
+  //==================================================
+  &__title{
+    color:var(--sunrise);
+    text-align: center;
+  }
+
+  &__description{
+    color:var(--white60op);
+    p{
+      margin-block-end: 1rem;
+    }
+    
+  }
+  &__italic{
+    font-style: italic;
+    font-size: .7rem;
+  }
+
+}

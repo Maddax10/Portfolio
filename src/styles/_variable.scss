@@ -9,6 +9,7 @@ $lightGray: color.adjust($black, $lightness : 15%);
 $lighterGray: color.adjust($black, $lightness : 25%);
 $sunrise: #FFA600;
 $transitionTime : .3s;
+$doubleTransitionTime : calc($transitionTime * 2);
 
 :root{
   --black : #{$black};
@@ -20,6 +21,7 @@ $transitionTime : .3s;
   --lighterGray : #{$lighterGray};
   --sunrise : #{$sunrise};
   --transitionTime : #{$transitionTime};
+  --doubleTransitionTime : #{$doubleTransitionTime};
 }
 
 body {
