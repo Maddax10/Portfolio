@@ -16,6 +16,7 @@ For now the site is only for mobile 26/06/2025
 
 Open the portfolio folder into Visual Studio Code and execute in the terminal
 ```bash
+npm install
 npm run build
 npm run dev
 ```
