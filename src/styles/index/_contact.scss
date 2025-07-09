@@ -1,0 +1,38 @@
+.contact{
+  &__card{
+    background-color: var(--sunrise);
+    padding:1rem;
+  }
+  &__form{
+    display:grid;
+    gap:.3rem;
+    input, textarea, button{
+      border-radius: .5rem;
+      height:2rem;
+    }
+    input, textarea{
+      border:2px solid black;
+      padding-inline: 1rem;
+    }
+    textarea{
+      padding-block:1rem;
+      height:150px;
+      min-height:70px;
+      resize : vertical;
+    }
+    button{
+      transition: ease var(--transitionTime);
+      background-color: var(--darkGray);
+      color:var(--white);
+      box-shadow: 0 5px 2px var(--lightGray);
+      border:none;
+      cursor:pointer;
+      &:hover{
+        color:var(--sunrise);
+        transform:translateY(3px);
+      box-shadow: 0 2px 2px var(--darkGray),inset 0 0 0 1px var(--sunrise);
+
+      }
+    }
+  }
+}

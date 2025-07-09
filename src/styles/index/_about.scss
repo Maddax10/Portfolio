@@ -5,7 +5,7 @@
   &__card {
     display: grid;
     padding: 1rem;
-    margin: 1rem;
+    margin-inline: 1rem;
   }
   //==================================================
   //  Image
@@ -59,7 +59,7 @@
     }
     
   }
-  &__litle{
+  &__little{
     font-style: italic;
     font-size: .7rem;
   }
