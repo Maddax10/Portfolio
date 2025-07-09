@@ -1,9 +1,9 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background: var(--black);
-  color: var(--sunrise);
-  font-weight: 200;
+  background: var(--sunrise);
+  color: var(--black);
+  font-weight: 300;
   padding: 1rem;
 
   gap: 1rem;
@@ -11,21 +11,23 @@
     ul {
       display: flex;
       flex-direction: column;
+      gap:.5rem;
     }
     h1 {
       padding-block-end: 1rem;
     }
-    a{
-      transition:ease var(--transitionTime);
-    color:var(--sunrise);     
-    font-weight: 350; 
-      &:hover{
-        font-weight: 600;
+    a {
+      transition: ease var(--transitionTime);
+      color: var(--black);
+      font-weight: 600;
+      padding-block:1rem;
+      &:hover {
+        font-weight: 900;
       }
+    }
   }
-  }
-  &__title {
-    font-weight: 100;
+  &__copyright {
+    font-weight: 150;
   }
 }
 .copyBtn {
