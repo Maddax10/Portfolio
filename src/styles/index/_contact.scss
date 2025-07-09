@@ -28,7 +28,7 @@
       transition: ease var(--transitionTime);
       background-color: var(--darkGray);
       color:var(--white);
-      box-shadow: 0 5px 2px var(--lightGray);
+      box-shadow: 0 5px 2px 0 var(--lightGray);
       border:none;
       cursor:pointer;
       &:hover{
